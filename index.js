@@ -50,9 +50,9 @@ function render(resume) {
     workInfo.summary = convertMarkdown(workInfo.summary);
     workInfo.highlights = _(workInfo.highlights).map(convertMarkdown);
   });
-  // _(resume.skills).forEach(skillInfo => {
-  //   skillInfo.keywords = _(skillInfo.keywords).map(convertMarkdown);
-  // });
+  _(resume.skills).forEach(skillInfo => {
+    skillInfo.keywords = _(skillInfo.keywords).map(convertMarkdown);
+  });
   _(resume.education).forEach(educationInfo => {
     educationInfo.courses = _(educationInfo.courses).map(convertMarkdown);
   });
