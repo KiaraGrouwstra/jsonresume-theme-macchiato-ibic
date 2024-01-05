@@ -5,12 +5,12 @@
         {{#each resume.interests}}
             <section class="item">
                 {{#if name}}
-                    <h4 class="bold">{{name}}</h4>
+                    <h4 class="bold">{{{name}}}</h4>
                 {{/if}}
                 {{#if keywords.length}}
                     <ul class="minimal">
                         {{#each keywords}}
-                            <li>{{.}}</li>
+                            <li>{{{.}}}</li>
                         {{/each}}
                     </ul>
                 {{/if}}

@@ -12,7 +12,7 @@
         {{/if}}
 
         {{#if position}}
-          <h4>{{position}}</h4>
+          <h4>{{{position}}}</h4>
         {{/if}}
 
         {{#if keywords.length}}
@@ -24,13 +24,13 @@
         {{/if}}
 
         {{#if summary}}
-          <p class="summary">{{summary}}</p>
+          <p class="summary">{{{summary}}}</p>
         {{/if}}
 
         {{#if highlights.length}}
           <ul>
             {{#each highlights}}
-              <li>{{.}}</li>
+              <li>{{{.}}}</li>
             {{/each}}
           </ul>
         {{/if}}

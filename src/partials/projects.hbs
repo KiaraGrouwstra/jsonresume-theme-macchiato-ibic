@@ -7,7 +7,7 @@
             {{> section-header name=this.name website=this.url showWebsite=true}}
 
             {{#if role}}
-                <h5>{{role}}</h5>
+                <h5>{{{role}}}</h5>
             {{/if}}
 
             {{#if keywords.length}}
@@ -19,17 +19,17 @@
             {{/if}}
 
             {{#if summary}}
-            <p class="summary">{{summary}}</p>
+            <p class="summary">{{{summary}}}</p>
             {{/if}}
 
             {{#if description}}
-            <p class="summary">{{description}}</p>
+            <p class="summary">{{{description}}}</p>
             {{/if}}
 
             {{#if highlights.length}}
             <ul>
                 {{#each highlights}}
-                <li>{{.}}</li>
+                <li>{{{.}}}</li>
                 {{/each}}
             </ul>
             {{/if}}

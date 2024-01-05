@@ -390,3 +390,7 @@ ul.two-column li {
   background: ghostwhite;
   border-radius: 5px;
 }
+
+.mop-wrapper > p &:last-child {
+  margin: 0;
+}
