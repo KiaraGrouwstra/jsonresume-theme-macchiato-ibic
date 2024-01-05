@@ -27,7 +27,7 @@ handlebars.registerHelper({
 
 function convertMarkdown(str) {
   if (str != null) {
-    return markdown.render(str);
+    return markdown.renderInline(str);
   }
   return null;
 }
